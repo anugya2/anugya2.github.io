@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Coasterland - Home</title>
+        <meta charset="utf-8">
+        <meta name="description" content="This is a website for the theme park Coasterland, which is located in the best place in the world: your imagination.">
+        <meta name="author" content="Joshua Sigelman, Abdul Zalmay, Anugya Sharma, Edward Machin, Sanjay Ravigopal">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="refresh" content="600">
+        <meta name="keywords" content="Theme Park">
+        
+                
+        <style>
+
+           /* Styling for the 2 columned grid/ middleblock used in this page.*/           
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                font-family: Arial;
+            }
+
+            .header {
+                text-align: center;
+                padding: 32px;
+            }
+
+            /* Clear floats after the columns */
+            /* .row {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 4px;
+            } */
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            
+            /* Create two equal columns that floats next to each other */
+            .column {
+                float: left;
+                width: 50%;
+                padding: 10px;
+            }
+
+            .column img {
+                margin-top: 12px;
+            }
+            /* end of Styling for the 2 columned grid used in this page. -->
+
+
+            /*- Styling for the 3 columned grid used in hotel part of this page. */
+            .column1 {
+                float: left;
+                width: 33%;
+                padding: 10px;
+            }
+
+            .column1 img {
+                margin-top: 12px;
+            }
+
+            /* Clear floats after the columns */
+            .row1:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            /* ENd of syling for the 3 columned grid used in hotel part of this page. */
+
+
+            /* container created to contain text and image of tickets together. */
+            
+            .container {
+                position: relative;
+                font-family: Arial;
+                color: rgb(0, 0, 0);
+                
+            }
+
+            .text-block {
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                background-color: rgb(187, 42, 42);
+                color: white;
+                padding-left: 20px;
+                padding-right: 20px;
+                font-size:30px ;
+            }
+
+           
+
+            .text-block1 {
+                font-family: Arial;
+                font-size: 30px;
+                
+                bottom: -60px;
+                right: 0px;
+                background-color: rgba(39, 184, 228, 0);
+                color: rgb(22, 93, 247);
+                padding-left: 20px;
+                padding-right: 20px;
+                text-align: center;
+            }
+
+            /* end of styling for container created to contain text and image of tickets together. */
+
+            
+
+            /* styling  the topblock */          
+
+
+            #topBlock {
+                background-color: #b5caad ;
+            }
+            
+            
+
+            .text-blocktop {
+                font-family: Arial, Helvetica, sans-serif;                            
+                
+                bottom: 0px;
+                right: 0px;
+                background-color: rgba(106, 151, 117, 0.144);
+                color: rgb(0, 0, 0);
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 20px;
+                padding-bottom: 20px;  
+                font-size: 30px;  
+                text-align: left;         
+                
+            }
+
+            .text-blocktop h5{
+                font-weight: bold;
+                font-size: 40px;
+            }
+            /* end of styling for top container */       
+            
+
+            /* Generic styling taken from main page */
+
+            body {
+                margin-top: 30px;
+                margin-bottom: 30px;
+                background-color: #ffffff;
+            }
+            header {
+                background-color: #ffd08a;
+                display:table;
+                width: 100vw;
+                height: auto;
+            }
+            footer {
+                background-color: #ffd08a;
+                display:table;
+                width: 100vw;
+                height: auto;
+            }
+            header>img{
+                display: table-cell;
+                vertical-align: middle;
+                max-height:128px;
+                max-width:128px;
+                padding-left: 60px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            header>nav {
+                text-align: right;
+                display: table-cell;
+                vertical-align: middle;
+                padding-right: 60px;
+            }
+            footer>nav {
+                text-align: left;
+                display: table-cell;
+                vertical-align: middle;
+                padding-left: 60px;
+            }
+            footer>img{
+                display: table-cell;
+                vertical-align: middle;
+                margin-left:auto;
+                margin-right:auto; 
+            }
+            video {
+                width: 100%;
+                height: auto;
+            }
+            br {
+                clear: both;
+            }
+            h1 {
+                text-align: center;
+            }
+            .innerBody{
+                max-width: 1280px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30px;
+                margin-bottom: 30px; 
+            }
+
+            /* end of generic styling*/            
+            
+            
+            
+            
+            /* styling for the tickeheading banners*/       
+            
+            #ticketheading{
+                text-align: center;
+                background-color: rgba(51, 71, 255, 0.4);
+                border: rgb(243, 97, 141);
+                font-size: 4rem;
+            }
+           /* end of styling for the tickeheading banners*/
+
+
+
+           /* styling for the contact form.*/ 
+           #contactForm{
+               text-align: center;
+           }
+
+           #contatForm img {
+            border-radius: 50%;
+           }
+
+           /* styling for the contact form.*/
+
+           /* experimental styling for responsive design*/
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                font-family: Arial;
+            }
+
+            .header {
+                text-align: center;
+                padding: 32px;
+            }
+
+            .row {
+                display: -ms-flexbox; /* IE10 */
+                display: flex;
+                -ms-flex-wrap: wrap; /* IE10 */
+                flex-wrap: wrap;
+                padding: 0 4px;
+            }
+            .row1 {
+                display: -ms-flexbox; /* IE10 */
+                display: flex;
+                -ms-flex-wrap: wrap; /* IE10 */
+                flex-wrap: wrap;
+                padding: 0 4px;
+            }
+
+            /* Create four equal columns that sits next to each other */
+            .column {
+                -ms-flex: 50%; /* IE10 */
+                flex: 50%;
+                max-width: 50%;
+                padding: 0 4px;
+            }
+            .column1 {
+                -ms-flex: 50%; /* IE10 */
+                flex: 50%;
+                max-width: 50%;
+                padding: 0 4px;
+            }
+
+            .column img {
+                margin-top: 8px;
+                vertical-align: middle;
+                width: 100%;
+            }
+            .column1 img {
+                margin-top: 8px;
+                vertical-align: middle;
+                width: 100%;
+            }
+
+            /* Responsive layout - makes a two column-layout instead of four columns */
+
+            @media screen and (max-width: 800px) {
+                .column {
+                    -ms-flex: 100%;
+                    flex: 100%;
+                    max-width: 100%;
+                }
+                .column1 {
+                    -ms-flex: 100%;
+                    flex: 100%;
+                    max-width: 100%;
+                }
+            }
+
+            /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+                .column {
+                    -ms-flex: 100%;
+                    flex: 100%;
+                    max-width: 100%;
+                }
+                .column1 {
+                    -ms-flex: 100%;
+                    flex: 100%;
+                    max-width: 100%;
+                }
+            }
+            
+        </style>
+
+    </head>
+
+
+    <body>
+        
+        <!-- Header contains the navigation menu at the top as well as our theme park logo -->
+
+        <header>
+            <img alt="logo" src="img/coasterLogoImg.png" />
+            
+            <nav>
+                <a href="videos.html">Video</a>
+                &emsp;
+                <a href="videos.html">Video</a>
+                &emsp;
+                <a href="index.html">Home</a>
+            </nav>
+        
+        </header>
+		
+
+        <br>
+        <!-- content block contains everything apart from the header and footer-->
+        <!-- three division in the content div: 1.topBlock  2.middleBlock 3.bottomblock-->
+        <!-- #topBlock is the topmost block containing texts(#words) on the left and a hotel gif(#photo)
+        on the right. -->
+        <!--class row and column are being used to fix the content to a grid.-->
+
+        <div id="content">
+
+            <div id="topBlock">
+
+                <div class="row">
+                    <div class="column">       
+
+                        
+                        <div class="text-blocktop">
+                            <h5>ghar bahirako video!</h5>
+                            <p4> 
+                                Ghar bata road nikline bato. Tyo ekchin pharkera dekhako blue ghar,
+                                hami basne ghar ho. sunsaan, rookh nai rookh ko road cha 2 minute,
+                                ani main road aaucha.
+
+                                Videolai pause, play je ni garna milcha hai.
+
+
+                            </p4>
+                                                
+                    
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div class="column">   
+                         
+                        <div id="photo" alt= "gif of a rustic and cozy hotel room."  >
+                            <video width="320" height="240" controls>
+                                <source src="vid/part_1.mp4" type="video/mp4">
+                                <source src="" type="video/ogg">
+                                
+                            </video>                         
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr></hr>
+            <br>
+
+            <div id="topBlock">
+
+                <div class="row">
+                    <div class="column">       
+
+                        
+                        <div class="text-blocktop">
+                            <h5>campus area ko video</h5>
+                            <p4> 
+                               poorano campus area.
+
+
+                            </p4>
+                                                
+                    
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div class="column">   
+                         
+                        <div id="photo" alt= "gif of a rustic and cozy hotel room."  >
+                            <video width="320" height="240" controls>
+                                <source src="vid/VID_20201117_170724.mp4" type="video/mp4">
+                                <source src="" type="video/ogg">
+                                
+                            </video>                         
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+             
+
+       
+        
+           <br>
+           <br>
+        
+        
+
+
+
+        
+
+
+        </div>
+
+
+        
+        
+
+        
+
+    </body>
+
+        
+    
+
+
+       
+
+
+    
+        
+
+       
+      
+      
+
+
+
+
+        
+
+
+
+</html>
