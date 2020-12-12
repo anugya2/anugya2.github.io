@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Coasterland - Home</title>
+        <meta charset="utf-8">
+        <meta name="description" content="This is a website for the theme park Coasterland, which is located in the best place in the world: your imagination.">
+        <meta name="author" content="Joshua Sigelman, Abdul Zalmay, Anugya Sharma, Edward Machin, Sanjay Ravigopal">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="refresh" content="600">
+        <meta name="keywords" content="Theme Park">
+        
+                
+        <style>
+
+           /* Styling for the 2 columned grid/ middleblock used in this page.*/           
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                font-family: Arial;
+            }
+
+            .header {
+                text-align: center;
+                padding: 32px;
+            }
+
+            /* Clear floats after the columns */
+            /* .row {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 4px;
+            } */
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            
+            /* Create two equal columns that floats next to each other */
+            .column {
+                float: left;
+                width: 50%;
+                padding: 10px;
+            }
+
+            .column img {
+                margin-top: 12px;
+            }
+            /* end of Styling for the 2 columned grid used in this page. -->
+
+
+            /*- Styling for the 3 columned grid used in hotel part of this page. */
+            .column1 {
+                float: left;
+                width: 33%;
+                padding: 10px;
+            }
+
+            .column1 img {
+                margin-top: 12px;
+            }
+
+            /* Clear floats after the columns */
+            .row1:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            /* ENd of syling for the 3 columned grid used in hotel part of this page. */
+
+
+            /* container created to contain text and image of tickets together. */
+            
+            .container {
+                position: relative;
+                font-family: Arial;
+                color: rgb(0, 0, 0);
+                
+            }
+
+            .text-block {
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                background-color: rgb(187, 42, 42);
+                color: white;
+                padding-left: 20px;
+                padding-right: 20px;
+                font-size:30px ;
+            }
+
+           
+
+            .text-block1 {
+                font-family: Arial;
+                font-size: 30px;
+                
+                bottom: -60px;
+                right: 0px;
+                background-color: rgba(39, 184, 228, 0);
+                color: rgb(22, 93, 247);
+                padding-left: 20px;
+                padding-right: 20px;
+                text-align: center;
+            }
+
+            /* end of styling for container created to contain text and image of tickets together. */
+
+            
+
+            /* styling  the topblock */          
+
+
+            #topBlock {
+                background-color: #b5caad ;
+            }
+            
+            
+
+            .text-blocktop {
+                font-family: Arial, Helvetica, sans-serif;                            
+                
+                bottom: 0px;
+                right: 0px;
+                background-color: rgba(106, 151, 117, 0.144);
+                color: rgb(0, 0, 0);
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 20px;
+                padding-bottom: 20px;  
+                font-size: 30px;  
+                text-align: left;         
+                
+            }
+
+            .text-blocktop h5{
+                font-weight: bold;
+                font-size: 40px;
+            }
+            /* end of styling for top container */       
+            
+
+            /* Generic styling taken from main page */
+
+            body {
+                margin-top: 30px;
+                margin-bottom: 30px;
+                background-color: #ffffff;
+            }
+            header {
+                background-color: #ffd08a;
+                display:table;
+                width: 100vw;
+                height: auto;
+            }
+            footer {
+                background-color: #ffd08a;
+                display:table;
+                width: 100vw;
+                height: auto;
+            }
+            header>img{
+                display: table-cell;
+                vertical-align: middle;
+                max-height:128px;
+                max-width:128px;
+                padding-left: 60px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            header>nav {
+                text-align: right;
+                display: table-cell;
+                vertical-align: middle;
+                padding-right: 60px;
+            }
+            footer>nav {
+                text-align: left;
+                display: table-cell;
+                vertical-align: middle;
+                padding-left: 60px;
+            }
+            footer>img{
+                display: table-cell;
+                vertical-align: middle;
+                margin-left:auto;
+                margin-right:auto; 
+            }
+            video {
+                width: 100%;
+                height: auto;
+            }
+            br {
+                clear: both;
+            }
+            h1 {
+                text-align: center;
+            }
+            .innerBody{
+                max-width: 1280px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30px;
+                margin-bottom: 30px; 
+            }
+
+            /* end of generic styling*/            
+            
+            
+            
+            
+            /* styling for the tickeheading banners*/       
+            
+            #ticketheading{
+                text-align: center;
+                background-color: rgba(51, 71, 255, 0.4);
+                border: rgb(243, 97, 141);
+                font-size: 4rem;
+            }
+           /* end of styling for the tickeheading banners*/
+
+
+
+           /* styling for the contact form.*/ 
+           #contactForm{
+               text-align: center;
+           }
+
+           #contatForm img {
+            border-radius: 50%;
+           }
+
+           /* styling for the contact form.*/
+
+           /* experimental styling for responsive design*/
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                font-family: Arial;
+            }
+
+            .header {
+                text-align: center;
+                padding: 32px;
+            }
+
+            .row {
+                display: -ms-flexbox; /* IE10 */
+                display: flex;
+                -ms-flex-wrap: wrap; /* IE10 */
+                flex-wrap: wrap;
+                padding: 0 4px;
+            }
+            .row1 {
+                display: -ms-flexbox; /* IE10 */
+                display: flex;
+                -ms-flex-wrap: wrap; /* IE10 */
+                flex-wrap: wrap;
+                padding: 0 4px;
+            }
+
+            /* Create four equal columns that sits next to each other */
+            .column {
+                -ms-flex: 50%; /* IE10 */
+                flex: 50%;
+                max-width: 50%;
+                padding: 0 4px;
+            }
+            .column1 {
+                -ms-flex: 50%; /* IE10 */
+                flex: 50%;
+                max-width: 50%;
+                padding: 0 4px;
+            }
+
+            .column img {
+                margin-top: 8px;
+                vertical-align: middle;
+                width: 100%;
+            }
+            .column1 img {
+                margin-top: 8px;
+                vertical-align: middle;
+                width: 100%;
+            }
+
+            /* Responsive layout - makes a two column-layout instead of four columns */
+
+            @media screen and (max-width: 800px) {
+                .column {
+                    -ms-flex: 100%;
+                    flex: 100%;
+                    max-width: 100%;
+                }
+                .column1 {
+                    -ms-flex: 100%;
+                    flex: 100%;
+                    max-width: 100%;
+                }
+            }
+
+            /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+                .column {
+                    -ms-flex: 100%;
+                    flex: 100%;
+                    max-width: 100%;
+                }
+                .column1 {
+                    -ms-flex: 100%;
+                    flex: 100%;
+                    max-width: 100%;
+                }
+            }
+            
+        </style>
+
+    </head>
+
+
+    <body>
+        
+        <!-- Header contains the navigation menu at the top as well as our theme park logo -->
+
+        <header>
+            <img alt="logo" src="img/coasterLogoImg.png" />
+            
+            <nav>
+                <a href="index.html">Home</a>
+                &emsp;
+                <a href="park-info.html">Park Info</a>
+                &emsp;
+                <a href="tickets-info.html">Tickets</a>
+            </nav>
+        
+        </header>
+		
+
+        <br>
+        <!-- content block contains everything apart from the header and footer-->
+        <!-- three division in the content div: 1.topBlock  2.middleBlock 3.bottomblock-->
+        <!-- #topBlock is the topmost block containing texts(#words) on the left and a hotel gif(#photo)
+        on the right. -->
+        <!--class row and column are being used to fix the content to a grid.-->
+
+        <div id="content">
+
+            <div id="topBlock">
+
+                <div class="row">
+                    <div class="column">       
+
+                        
+                        <div class="text-blocktop">
+                            <h5>Tickets and Accomodation</h5>
+                            <p4> 
+                                Ready to visit our park and have fun? 
+                                Checkout these affordable ticket prices and cozy hotels near us.
+                                You can get ticket or passes for a day or for the whole weekend.
+                                If you are in a group, you can get a single group ticket for the whole group.
+                                And you dont have to worry about accomodations either.
+                                These three hotels near us are absolutely lovely.
+
+                            </p4>
+                                                
+                    
+                            
+                        </div>
+                        
+                    </div>
+
+                    <div class="column">   
+                         
+                        <div id="photo" alt= "gif of a rustic and cozy hotel room."  >
+                            <img src="https://media.giphy.com/media/dUrzJSmF9iJoy8KhFo/giphy.gif" 
+                            alt="gif of hotel room" width=100% style= "float:right" style="vertical-align:top"/>                          
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+             
+
+       
+        
+           <br>
+           <br>
+        
+        
+
+
+
+        
+
+            <!-- this is the second division containing the two tickets -->
+
+        
+            <div id="middleBlock">
+
+
+                <div id="ticketheading" >
+                    <h8>TICKETS</h8>
+                </div>
+
+
+                <div class="row">
+                    <div class="column">       
+
+                        <div class="container"> 
+                            <a href="https://www.merriam-webster.com/dictionary/ticket">
+                                <img src= "img/one_day_ticket_image.PNG" width=100% alt= "logo containing a single ticket">
+                                <div class="text-block">
+                                    <h4>ONE DAY TICKET</h4>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container">
+                            <a href="https://www.merriam-webster.com/words-at-play/anecdote-vs-antidote-difference-usage">
+                                <img src="img/GROUP_TICKET.png"width=100% alt= "logo of a group pass ticket">
+                                <div class="text-block">
+                                    <h4>GROUP PASS</h4>
+                                </div>
+                        </a>         
+                        
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="column">       
+
+                        <div class="container"> 
+                            <a href="https://www.merriam-webster.com/time-traveler">
+                                <img src="img/two_day_ticket.PNG"width=100% alt= "logo of a pair of tickets">
+                                <div class="text-block">
+                                    <h4>TWO DAY TICKET</h4>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container">
+                            <a href="https://www.merriam-webster.com/dictionary/aphantasia">
+                                <img src="img/SEASON_PASS.PNG"width=100% alt= "logo of a season pass ticket">
+                                <div class="text-block">
+                                    <h4>SEASON PASS</h4>
+                                </div>     
+                            </a>    
+                        
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            </br>
+            </br>
+
+            <!-- This is the third division containing the "stay with us" banner and 3 hotels .-->
+
+            <div id="lastBlock">
+
+                <div id="ticketheading" >
+                    <h8>STAY WITH US</h8>
+                </div>
+
+
+
+
+                <div class="row1">   
+
+                    <div class="column1">       
+
+                        <div class="container1"> 
+                            <a href="img/edvin-johansson-rlwE8f8anOc-unsplash.jpg">
+                                <img src="img/edvin-johansson-rlwE8f8anOc-unsplash.jpg"width=100%
+                                 alt= "photo of a resort with swimming pool">
+                                <div class="text-block1">
+                                    <h4>SEA PANORAMA RESORT</h4>
+                                </div>
+                            </a>
+                        </div>             
+                    </div>
+
+
+                    <div class="column1">       
+
+                        <div class="container1"> 
+                            <a href="https://www.merriam-webster.com/dictionary/ticket">
+                                <img src="img/willian-justen-de-vasconcellos-aOin9_H-5jY-unsplash.jpg"width=100% 
+                                alt= "bird-eye view of a huge hotel premise with slides and pools">
+                                <div class="text-block1">
+                                    <h4>AQUA SLIDE HOTEL</h4>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="column1">       
+
+                        <div class="container1"> 
+                            <a href="https://www.merriam-webster.com/dictionary/ticket">
+                                <img src="img/man-pan-KTSYy-3XVSo-unsplash.jpg"width=100%
+                                alt= "image of a warm looking rustic hotel room">
+                                <div class="text-block1">
+                                    <h4>HOTEL RUSTIC ROCK</h4>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="column1">       
+
+                        <div class="container1"> 
+                            <a href="https://www.merriam-webster.com/dictionary/ticket">
+                                <img src="img/quaint_cottage.png"width=100%
+                                alt= "image of a quaint cottage">
+                                <div class="text-block1">
+                                    <h4>QUAINT COTTAGE</h4>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                   
+
+                    
+
+
+
+                </div>
+
+
+                    
+
+                                
+
+
+            </div>
+
+        </div>
+
+
+        <!--this section contains the contact form -->
+
+        <div id="contactForm"> 
+            <img src= "img/contactsupport.png"   alt="logo of a support employee with headphones"
+            width="200" height="200"
+            style="border-radius: 50%; ">
+            <h1>CONTACT US</h1>
+
+            <form action="/action_page.php">
+              <label for="fname">First name:</label>
+              <input type="text" id="fname" name="fname"><br><br>
+              <label for="lname">Last name:</label>
+              <input type="text" id="lname" name="lname"><br><br>
+              <label for="lname">Email:</label>
+              <input type="email" id="email" name="lname"><br><br>
+              <input type="submit" value="Submit">
+            </form>
+            
+            <p>Click the "Submit" button and we will contact you soon.</p>
+
+        </div>
+
+
+        <!--this is the footer section-->
+
+        <footer>
+            <nav>        
+                <a href="index.html">Home</a>
+                &emsp;
+                <a href="index.html">Contact</a>
+                &emsp;
+            </nav>
+    
+            <img alt="map" width="96px" height="96px" src="img/map-icon.svg" />
+            
+            <div class="copyBlock">
+                  &copy; Copyright 2020 Coasterland Inc.
+            </div>
+        </footer>
+
+        
+
+    </body>
+
+        
+    
+
+
+       
+
+
+    
+        
+
+       
+      
+      
+
+
+
+
+        
+
+
+
+</html>
