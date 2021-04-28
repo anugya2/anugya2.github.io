@@ -1,624 +1,284 @@
+
+<!--Source: Everthing in this html file has been written from scratch unless otherwise mentioned on top of each tag or in
+comments on the side.-->
+
+
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-        <title>Coasterland - Home</title>
+        <title>Architecture Now - Home</title>
         <meta charset="utf-8">
-        <meta name="description" content="This is a website for the theme park Coasterland, which is located in the best place in the world: your imagination.">
-        <meta name="author" content="Joshua Sigelman, Abdul Zalmay, Anugya Sharma, Edward Machin, Sanjay Ravigopal">
+        <meta name="description" content="This is a website for an architecture magazine.">
+        <meta name="author" content="Anugya Sharma">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="refresh" content="600">
-        <meta name="keywords" content="Theme Park">
-        
-                
-        <style>
-
-           /* Styling for the 2 columned grid/ middleblock used in this page.*/           
-
-            * {
-                box-sizing: border-box;
-            }
-
-            body {
-                margin: 0;
-                font-family: Arial;
-            }
-
-            .header {
-                text-align: center;
-                padding: 32px;
-            }
-
-            /* Clear floats after the columns */
-            /* .row {
-                display: flex;
-                flex-wrap: wrap;
-                padding: 0 4px;
-            } */
-
-            .row:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-
-            
-            /* Create two equal columns that floats next to each other */
-            .column {
-                float: left;
-                width: 50%;
-                padding: 10px;
-            }
-
-            .column img {
-                margin-top: 12px;
-            }
-            /* end of Styling for the 2 columned grid used in this page. -->
-
-
-            /*- Styling for the 3 columned grid used in hotel part of this page. */
-            .column1 {
-                float: left;
-                width: 33%;
-                padding: 10px;
-            }
-
-            .column1 img {
-                margin-top: 12px;
-            }
-
-            /* Clear floats after the columns */
-            .row1:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-            /* ENd of syling for the 3 columned grid used in hotel part of this page. */
-
-
-            /* container created to contain text and image of tickets together. */
-            
-            .container {
-                position: relative;
-                font-family: Arial;
-                color: rgb(0, 0, 0);
-                
-            }
-
-            .text-block {
-                position: absolute;
-                bottom: 20px;
-                right: 20px;
-                background-color: rgb(187, 42, 42);
-                color: white;
-                padding-left: 20px;
-                padding-right: 20px;
-                font-size:30px ;
-            }
-
-           
-
-            .text-block1 {
-                font-family: Arial;
-                font-size: 30px;
-                
-                bottom: -60px;
-                right: 0px;
-                background-color: rgba(39, 184, 228, 0);
-                color: rgb(22, 93, 247);
-                padding-left: 20px;
-                padding-right: 20px;
-                text-align: center;
-            }
-
-            /* end of styling for container created to contain text and image of tickets together. */
-
-            
-
-            /* styling  the topblock */          
-
-
-            #topBlock {
-                background-color: #b5caad ;
-            }
-            
-            
-
-            .text-blocktop {
-                font-family: Arial, Helvetica, sans-serif;                            
-                
-                bottom: 0px;
-                right: 0px;
-                background-color: rgba(106, 151, 117, 0.144);
-                color: rgb(0, 0, 0);
-                padding-left: 20px;
-                padding-right: 20px;
-                padding-top: 20px;
-                padding-bottom: 20px;  
-                font-size: 30px;  
-                text-align: left;         
-                
-            }
-
-            .text-blocktop h5{
-                font-weight: bold;
-                font-size: 40px;
-            }
-            /* end of styling for top container */       
-            
-
-            /* Generic styling taken from main page */
-
-            body {
-                margin-top: 30px;
-                margin-bottom: 30px;
-                background-color: #ffffff;
-            }
-            header {
-                background-color: #ffd08a;
-                display:table;
-                width: 100vw;
-                height: auto;
-            }
-            footer {
-                background-color: #ffd08a;
-                display:table;
-                width: 100vw;
-                height: auto;
-            }
-            header>img{
-                display: table-cell;
-                vertical-align: middle;
-                max-height:128px;
-                max-width:128px;
-                padding-left: 60px;
-                padding-top: 30px;
-                padding-bottom: 30px;
-            }
-            header>nav {
-                text-align: right;
-                display: table-cell;
-                vertical-align: middle;
-                padding-right: 60px;
-            }
-            footer>nav {
-                text-align: left;
-                display: table-cell;
-                vertical-align: middle;
-                padding-left: 60px;
-            }
-            footer>img{
-                display: table-cell;
-                vertical-align: middle;
-                margin-left:auto;
-                margin-right:auto; 
-            }
-            video {
-                width: 100%;
-                height: auto;
-            }
-            br {
-                clear: both;
-            }
-            h1 {
-                text-align: center;
-            }
-            .innerBody{
-                max-width: 1280px;
-                margin-left: auto;
-                margin-right: auto;
-                margin-top: 30px;
-                margin-bottom: 30px; 
-            }
-
-            /* end of generic styling*/            
-            
-            
-            
-            
-            /* styling for the tickeheading banners*/       
-            
-            #ticketheading{
-                text-align: center;
-                background-color: rgba(51, 71, 255, 0.4);
-                border: rgb(243, 97, 141);
-                font-size: 4rem;
-            }
-           /* end of styling for the tickeheading banners*/
-
-
-
-           /* styling for the contact form.*/ 
-           #contactForm{
-               text-align: center;
-           }
-
-           #contatForm img {
-            border-radius: 50%;
-           }
-
-           /* styling for the contact form.*/
-
-           /* experimental styling for responsive design*/
-
-            * {
-                box-sizing: border-box;
-            }
-
-            body {
-                margin: 0;
-                font-family: Arial;
-            }
-
-            .header {
-                text-align: center;
-                padding: 32px;
-            }
-
-            .row {
-                display: -ms-flexbox; /* IE10 */
-                display: flex;
-                -ms-flex-wrap: wrap; /* IE10 */
-                flex-wrap: wrap;
-                padding: 0 4px;
-            }
-            .row1 {
-                display: -ms-flexbox; /* IE10 */
-                display: flex;
-                -ms-flex-wrap: wrap; /* IE10 */
-                flex-wrap: wrap;
-                padding: 0 4px;
-            }
-
-            /* Create four equal columns that sits next to each other */
-            .column {
-                -ms-flex: 50%; /* IE10 */
-                flex: 50%;
-                max-width: 50%;
-                padding: 0 4px;
-            }
-            .column1 {
-                -ms-flex: 50%; /* IE10 */
-                flex: 50%;
-                max-width: 50%;
-                padding: 0 4px;
-            }
-
-            .column img {
-                margin-top: 8px;
-                vertical-align: middle;
-                width: 100%;
-            }
-            .column1 img {
-                margin-top: 8px;
-                vertical-align: middle;
-                width: 100%;
-            }
-
-            /* Responsive layout - makes a two column-layout instead of four columns */
-
-            @media screen and (max-width: 800px) {
-                .column {
-                    -ms-flex: 100%;
-                    flex: 100%;
-                    max-width: 100%;
-                }
-                .column1 {
-                    -ms-flex: 100%;
-                    flex: 100%;
-                    max-width: 100%;
-                }
-            }
-
-            /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-            @media screen and (max-width: 600px) {
-                .column {
-                    -ms-flex: 100%;
-                    flex: 100%;
-                    max-width: 100%;
-                }
-                .column1 {
-                    -ms-flex: 100%;
-                    flex: 100%;
-                    max-width: 100%;
-                }
-            }
-            
-        </style>
-
+        <meta name="keywords" content="Architecure">        
+        <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">        
+        <!--linking to the image that will become the favicon for this page-->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <!--importing library for the social media menu icon-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
     </head>
-
-
+    
+    <!--the body is divided into three areas: header, main and footer.-->
     <body>
-        
-        <!-- Header contains the navigation menu at the top as well as our theme park logo -->
 
-        <header>
-            <img alt="logo" src="img/coasterLogoImg.png" />
+        <!--the header tag contains the 4 elements that can be found in the topmost part of the page-->
+        <!--1.The magazine logo 2.navigation bar(not in mobile site) 3.hamburger menu(only in mobile site) 4.sign-up form-->
+        <header> 
+
+            <!--This is topmost bar with sign up -->
+            <section class="top">
+                <a class="contact-btn" href="signup.html"> | Sign up | </a>
+            </section>
             
+
+            <!--This is the magazine's logo, also brings you to home-page when clicked-->
+            <section class="logo">
+                <a href="index.html"><img class="logo" alt="Logo of the magazine, containing a tiny figure of some city/tall buildinds and big stylish font of magazine name, architecure now" src="img/archi-logo.jpg" ></a>
+            </section>
+
+            <!--This is the navigation bar, takes you to the 4 other subpages-->
             <nav>
-                <a href="videos.html">Video</a>
-                &emsp;
-                <a href="videos.html">Video</a>
-                &emsp;
-                <a href="tickets-info.html">Tickets</a>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>                    
+                    <li><a href="merchandise.html">Merchandise</a></li>
+                    <li><a href="interiors.html">Interiors</a></li>
+                    <li><a href="opinion.html">Opinion</a></li>
+                </ul>
             </nav>
-        
+
+            
+
+            <!-- This is the hamburger menu for the mobile site, it wont display in bigger screens -->
+            <section class = "hamburger"><!--contained in a single class for easy display:none-->
+                <div class="hamburgerNav">
+                    <a href="index.html" class="activeHamburger">Menu</a>
+                    <div id="hamburgerLinks"><!--links to the 4 subpages-->                        
+                        <a href="merchandise.html">Merchandise</a>
+                        <a href="interiors.html">Interiors</a>
+                        <a href="opinion.html">Opinion</a>
+                        <a href="signup.html">Sign-up</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="hamburgerFunction()"><!-- calling the function that toggles the menu when clicked. source:w3schools-->
+                        <i class="fa fa-bars"></i><!--menu icon-->
+                    </a>
+                </div>
+            </section>            
+
         </header>
-		
 
-        <br>
-        <!-- content block contains everything apart from the header and footer-->
-        <!-- three division in the content div: 1.topBlock  2.middleBlock 3.bottomblock-->
-        <!-- #topBlock is the topmost block containing texts(#words) on the left and a hotel gif(#photo)
-        on the right. -->
-        <!--class row and column are being used to fix the content to a grid.-->
 
-        <div id="content">
 
-            <div id="topBlock">
+        <main>
 
-                <div class="row">
-                    <div class="column">       
+            <!-- start.......image carousel .........start-->
+            <!-- Initially taken from w3school.com but modified to suit this webpage design.
+             Also the js and css related to this has been extensively modified to create new aspects of the carousel.
+            -->
+            
+            <div class="slideshow-container"><!-- To contain everything related to the carousel-->
+                <div class="mySlides fade"><!-- Contains the first image and texts that go with it-->
+                  <div class="numbertext">1 / 3</div>
+                  <img alt="a picture of a brick, one-storey kindergarden building next to a street, with modern architecture style." src="img/project_newBrickDaycare_center.jpg" style="width:100%">
+                  <div class="timerbase"> </div>
+                  <div class="timer"> </div>                 
+                  <div class="text">Day Care Project.</div>
+                </div>                
+                <div class="mySlides fade"><!-- Contains the second image and texts that go with it-->
+                  <div class="numbertext">2 / 3</div>
+                  <img alt="An interioir photo of a wooden barn with double-height triangular beam ceilings" src="img/awards-wood.jpg" style="width:100%">
+                  <div class="timerbase"> </div>
+                  <div class="timer"> </div>
+                  <div class="text">Awards for wood construction design.</div>
+                </div>                
+                <div class="mySlides fade"><!-- Contains the third image and texts that go with it-->
+                  <div class="numbertext">3 / 3</div>
+                  <img alt= "a birds-eye-view photo of a green-ground cemetary with white headstone, hundreds of headstones" src="img/opinion-cemetaries.jpg" style="width:100%">
+                  <div class="timerbase"> </div>
+                  <div class="timer"> </div>
+                  <div class="text">What can cemeteries teach us about design?</div>
+                </div>                
+            </div>
 
-                        
-                        <div class="text-blocktop">
-                            <h5>Hawa Taalko Website Ho Yo!</h5>
-                            <p4> 
-                                Videos haru hernalai mathi videos lekheko thau ma click garnu.
-                                
-                            </p4>
-                                                
+            <br>   <!--For space between 2 areas.-->   
+
+            <div style="text-align:center"><!-- These have no html content, but with css, they appear as three dots below the carousel-->
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>            
+            <!-- end.......image carousel .........end-->
+
+            <!-- This is the area with flexible grid-->
+            <!-- They contain 8 articles with photoes and heading and textbody.-->
+            <!-- The div of class="column" can form a 3columned grid, 2 columned grid or a single columned grid based on screen size.-->
+            <article class="row">
+
+                <div class="column">
+
+                    <div class= "item" data-number="5"><!-- First item(article piece)-->
+                        <img alt="photo of a modern style, concrete chapel nestled among green trees. "  src="img/nicholas_chapel.jpg"/><!-- calling the image-->
+                        <h2>Concrete Chapel</h2>
+                        <p >This creation of architect Nicholas burns is nested inside a beautiful green
+                            portuguese  <!-- texts when read-less is active-->
+                            <span  class="dots" >....</span>
+                            <span  class="more" style="display: none;" >state. The 
+                                contrast of concrete amongst the green trees and granite boulders is striking.
+                                Nicholas burns says that it is time that something as old as religion meet the 
+                                modern world of architecture with concrete. We must note it
+                                 is not the first time a concrete chapel has been erected 
+                                 though.Le corbusier is famous for his own concrete chapel in ronchamp and 
+                                 that was made many many years ago. 
+                            </span><!-- texts when read-more is active-->
+                       </p>
+                       <button3 onclick="readMore1('5')" class="myBtn" >Read more</button3><!-- calling the function that triggers the Read-more button-->
+                    </div>
+
                     
-                            
-                        </div>
-                        
-                    </div>
-
-                    <div class="column">   
-                         
-                        <div id="photo" alt= "gif of a rustic and cozy hotel room."  >
-                            <img src="https://media.giphy.com/media/dUrzJSmF9iJoy8KhFo/giphy.gif" 
-                            alt="gif of hotel room" width=100% style= "float:right" style="vertical-align:top"/>                          
-                        </div>
-                        
-                    </div>
 
                 </div>
 
-            </div>
-
-             
-
-       
-        
-           <br>
-           <br>
-        
-        
-
-
-
-        
-
-            <!-- this is the second division containing the two tickets -->
-
-        
-            <div id="middleBlock">
+                <div class="column">
+                    <!-- second item(article piece)-->
+                    <div class= "item" data-number="6">
+                        <img alt="Photo of a concrete building made in brutalist style architecture." src="img/rober_conte_madrid_brutalist_photography.jpg"/>
+                        <h2>Brutalist Architecture</h2>
+                        <p >Roberto Conte's latest photography series is a treat for our eyes and our aesthetic senses.
+                            <span  class="dots" >....</span> 
+                            <span  class="more" style="display: none;" >This photography series
+                            explores the brutalist architecture of madrid. The brutalist age of architecture did not loast very long,
+                            but it did give us some gems.In madric, the potency of brutalist architecture can be observed in some of 
+                            the starkest of buildings. Roberto conte has done this brilliant job of capturing the feelings that brutalist
+                            design incite, in his photoes. The photographer's research for this seems to be very thorough and he has
+                            captured the vibrant energy of madrid. </span>
+                       </p>
+                       <button3 onclick="readMore1('6')" class="myBtn" >Read more</button3><!-- attribute of the function is 6 because we are trying to make the function more ordered and call only one item at a time-->
+                    </div>
 
 
-                <div id="ticketheading" >
-                    <h8>TICKETS</h8>
                 </div>
 
+                <div class="column">
 
-                <div class="row">
-                    <div class="column">       
-
-                        <div class="container"> 
-                            <a href="https://www.merriam-webster.com/dictionary/ticket">
-                                <img src= "img/one_day_ticket_image.PNG" width=100% alt= "logo containing a single ticket">
-                                <div class="text-block">
-                                    <h4>ONE DAY TICKET</h4>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="container">
-                            <a href="https://www.merriam-webster.com/words-at-play/anecdote-vs-antidote-difference-usage">
-                                <img src="img/GROUP_TICKET.png"width=100% alt= "logo of a group pass ticket">
-                                <div class="text-block">
-                                    <h4>GROUP PASS</h4>
-                                </div>
-                        </a>         
-                        
-                        </div>
-
-
-                    </div>
-
-
-                    <div class="column">       
-
-                        <div class="container"> 
-                            <a href="https://www.merriam-webster.com/time-traveler">
-                                <img src="img/two_day_ticket.PNG"width=100% alt= "logo of a pair of tickets">
-                                <div class="text-block">
-                                    <h4>TWO DAY TICKET</h4>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="container">
-                            <a href="https://www.merriam-webster.com/dictionary/aphantasia">
-                                <img src="img/SEASON_PASS.PNG"width=100% alt= "logo of a season pass ticket">
-                                <div class="text-block">
-                                    <h4>SEASON PASS</h4>
-                                </div>     
-                            </a>    
-                        
-                        </div>
-
-
-                    </div>
-                </div>
-
-            </div>
-            </br>
-            </br>
-
-            <!-- This is the third division containing the "stay with us" banner and 3 hotels .-->
-
-            <div id="lastBlock">
-
-                <div id="ticketheading" >
-                    <h8>STAY WITH US</h8>
-                </div>
-
-
-
-
-                <div class="row1">   
-
-                    <div class="column1">       
-
-                        <div class="container1"> 
-                            <a href="img/edvin-johansson-rlwE8f8anOc-unsplash.jpg">
-                                <img src="img/edvin-johansson-rlwE8f8anOc-unsplash.jpg"width=100%
-                                 alt= "photo of a resort with swimming pool">
-                                <div class="text-block1">
-                                    <h4>SEA PANORAMA RESORT</h4>
-                                </div>
-                            </a>
-                        </div>             
-                    </div>
-
-
-                    <div class="column1">       
-
-                        <div class="container1"> 
-                            <a href="https://www.merriam-webster.com/dictionary/ticket">
-                                <img src="img/willian-justen-de-vasconcellos-aOin9_H-5jY-unsplash.jpg"width=100% 
-                                alt= "bird-eye view of a huge hotel premise with slides and pools">
-                                <div class="text-block1">
-                                    <h4>AQUA SLIDE HOTEL</h4>
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-
-
-                    <div class="column1">       
-
-                        <div class="container1"> 
-                            <a href="https://www.merriam-webster.com/dictionary/ticket">
-                                <img src="img/man-pan-KTSYy-3XVSo-unsplash.jpg"width=100%
-                                alt= "image of a warm looking rustic hotel room">
-                                <div class="text-block1">
-                                    <h4>HOTEL RUSTIC ROCK</h4>
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
-
-                    <div class="column1">       
-
-                        <div class="container1"> 
-                            <a href="https://www.merriam-webster.com/dictionary/ticket">
-                                <img src="img/quaint_cottage.png"width=100%
-                                alt= "image of a quaint cottage">
-                                <div class="text-block1">
-                                    <h4>QUAINT COTTAGE</h4>
-                                </div>
-                            </a>
-                        </div>
-
+                    <!-- third item(article piece)-->
+                    <div class= "item" data-number="7">
+                        <img alt="A photo of a warm pavilion with surface of tiny wooden bricks" src="img/modular_wooden scales.jpg"/>
+                        <h2>Modular Wooden Scales</h2>
+                        <p >This modular pavilion clad in scales is the latest by Valencia studio MUT Design.
+                            With  
+                            <span  class="dots" >....</span> 
+                            <span  class="more" style="display: none;" >leftover wood from a travelling exhibition,
+                            the team has turned scraps to beauty. This design is one of those examples of when design meets functionality 
+                            and efiiciency. But it is not just that, it does more. This project has transformed a mundane act of getting 
+                            rid of leftovers into the creation of beautiful art. This pavilion reminds one of old wooden houses with its
+                            familiar comforting craoking noises and warmth of home. This pavilion is not just for the eyes though, the 
+                            temperature control obrained naturally through wood and spaces between them is a wonderful science.
+                            </span>
+                       </p>
+                       <button3 onclick="readMore1('7')" class="myBtn" >Read more</button3>
                     </div>
 
                    
 
-                    
+                </div>
 
-
+                <div class="column">
+                    <!-- fourth item(article piece)-->
+                    <div class= "item" data-number="8">
+                        <img alt="A photo of a single storey house with large class windows and a desert atmosphere" src="img/oasis_home_arizona.jpg"/>
+                        <h2>Oasis in Arizona</h2>
+                        <p >The famous studio, Ranch mine surprises us with their latest design.
+                            Its a courtyard 
+                            <span  class="dots" >....</span> 
+                            <span  class="more" style="display: none;" >house in the deserts of arizona. The studio designed this
+                             to be a musician's residence. Critics have deemed it an "oasis in arizona". This is beautiful house with a courtyard system
+                             with white stucco walls and solar panels. These white walls and the courtyards were particularly insipired by the traditional 
+                             courtyard houses in the deserts of Rajasthan. The white surfaces reflect sunlight and avoid trapping of heat and the courtyard
+                             provides a buffer between the harsh outside air and the controlled internal temperatures. This desgn is ideal for a desert environment.
+                             The designers have kept in mind the efficiency of power and have made the use of solar panels as well.
+                            </span>
+                       </p>
+                       <button3 onclick="readMore1('8')" class="myBtn" >Read more</button3>
+                    </div>
 
                 </div>
 
+                <div class="column">
 
-                    
+                    <!-- fifth item(article piece)-->
+                    <div class= "item" data-number="9">
+                        <img alt="a photo of a small rust colored and shiny school built in an african geographic landscape." src="img/3d_school.jpg"/>
+                        <h2>3D Printed School</h2>
+                        <p >This 3d printed school is the latest design by studio Mortazavi. This design makes use
+                            <span  class="dots" >....</span> <span  class="more" style="display: none;" >  use of 
+                                concrete and other building materials that have been locally sourced. This design is emerging as a 
+                                prime exmaple of sustainable building construction. Not only is this design innovative but is a practical
+                                solution towards local infrastructure in remote villages of the world. This is a solar powered building and made by
+                                joining modular elements called "pods".
+                            </span>
+                       </p>
+                       <button3 onclick="readMore1('9')" class="myBtn" >Read more</button3>
+                    </div>
+                </div>
 
-                                
+                <div class="column">
+                    <!-- sixth item(article piece)-->
+                    <div class= "item" data-number="10">
+                        <img alt="A photo three very tall and modern skyscraper connected with a vertical wall with plants." src="img/interconnected_skyscrappers.jpg"/>
+                        <h2>Interconnected Skyscrappers</h2>
+                        <p >This design features a trio of interconnected skyscrappers. This design features
+                            <span  class="dots" >....</span> <span  class="more" style="display: none;" > a trio of
+                                skyscrappers connected by a series of vertical planters. This design is still in its unbuilt form but a date
+                                has been set for the start of construction in london. This has been designed to provide space for offices as 
+                                well as for retail purposes. There will be use of natural ventilation and high efficiency facades as well.
+                            </span>
+                       </p>
+                       <button3 onclick="readMore1('10')" class="myBtn" >Read more</button3>
+                    </div>
 
+                </div>
 
-            </div>
-
-        </div>
-
-
-        <!--this section contains the contact form -->
-
-        <div id="contactForm"> 
-            <img src= "img/contactsupport.png"   alt="logo of a support employee with headphones"
-            width="200" height="200"
-            style="border-radius: 50%; ">
-            <h1>CONTACT US</h1>
-
-            <form action="/action_page.php">
-              <label for="fname">First name:</label>
-              <input type="text" id="fname" name="fname"><br><br>
-              <label for="lname">Last name:</label>
-              <input type="text" id="lname" name="lname"><br><br>
-              <label for="lname">Email:</label>
-              <input type="email" id="email" name="lname"><br><br>
-              <input type="submit" value="Submit">
-            </form>
+            </article>
             
-            <p>Click the "Submit" button and we will contact you soon.</p>
-
-        </div>
+        </main>
 
 
-        <!--this is the footer section-->
-
+        <!--This is the last section of the body-->
+        <!--this changes based on screen size.-->
+        <!--when viewed on the same sized screen, it remains consistent in all the 5 pages-->
         <footer>
-            <nav>        
-                <a href="index.html">Home</a>
-                &emsp;
-                <a href="index.html">Contact</a>
-                &emsp;
-            </nav>
-    
-            <img alt="map" width="96px" height="96px" src="img/map-icon.svg" />
+            <section class="footer">
+                <section class="footer1">
+                    <p1>&copy; All rights reserved.<br/>Architecture
+                     Now 2007-2021. <br/> ISSN:1234-1234 <br/>&copy;All images
+                     are not the property of this website author.
+                    </p1>
+
+                    <!--social media icons-->
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+
+                    <!--Links to other 3 pages-->
+                    <!-- this particular span will be displayed only in the tablet size range screens -->
+                    <span class="for-blank-space"></span> 
+                    <a href="merchandise.html"><p2 >Buy-here</p2></a>                    
+                    <a href="opinion.html"><p2>Articles</p2></a>                    
+                    <a href="signup.html"><p2>Sign-up </p2></a>
+
+                </section> 
+
+            </section>
             
-            <div class="copyBlock">
-                  &copy; Copyright 2020 Coasterland Inc.
-            </div>
         </footer>
 
         
+        <script src="script/script4_readMore_button.js"> </script><!--linking to the js script that has the readmore button functions-->      
+        <script src="script/script1_carousel.js"></script><!--linking to the js script that control the image carousel-->
+        <script src="script/script3_hamburger_menu.js"></script><!--linking to the js script that control the hamburger menu for mobile site-->
 
     </body>
-
-        
     
-
-
-       
-
-
-    
-        
-
-       
-      
-      
-
-
-
-
-        
-
-
-
 </html>
