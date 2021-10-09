@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Architecture Now - Home</title>
+        <meta charset="utf-8">
+        <meta name="description" content="This is a website for an architecture magazine.">
+        <meta name="author" content="Anugya Sharma">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="refresh" content="600">
+        <meta name="keywords" content="Architecure">
+        <!--css subject to change-->
+        <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>       
+
+        <!--the header tag contains the 4 elements that can be found in the topmost part of the page-->
+        <!--1.The magazine logo 2.navigation bar(not in mobile site) 3.hamburger menu(only in mobile site) 4.sign-up form-->
+        <header> 
+
+            <!--This is the sign up form -->
+            <section class="top">
+                <a class="contact-btn" href="signup.html"> | Sign up | </a>
+
+            </section>
+            
+
+            <!--This is the magazine's logo, also brings you to home-page when clicked-->
+            <section class="logo">
+                <a href="index.html"><img class="logo" alt="Logo of the magazine, containing a tiny figure of some city/tall buildinds and big stylish font of magazine name, architecure now" src="img/archi-logo.jpg" ></a>
+            </section>
+
+            <!--This is the navigation bar, takes you to the 4 other subpages-->
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>                    
+                    <li><a href="merchandise.html">Merchandise</a></li>
+                    <li><a href="interiors.html">Interiors</a></li>
+                    <li><a href="game.html">Game</a></li>
+                </ul>
+            </nav>
+
+            
+
+            <!-- This is the hamburger menu for the mobile site, it wont display in bigger screens -->
+            <section class = "hamburger"><!--contained in a single class for easy display:none-->
+                <div class="hamburgerNav">
+                    <a href="index.html" class="activeHamburger">Menu</a>
+                    <div id="hamburgerLinks"><!--links to the 4 subpages-->
+                        <a href="merchandise.html">Merchandise</a>
+                        <a href="interiors.html">Interiors</a>
+                        <a href="game.html">Game</a>
+                        <a href="signup.html">Sign-up</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="hamburgerFunction()"><!-- calling the function that toggles the menu when clicked. source:w3schools-->
+                        <i class="fa fa-bars"></i><!--menu icon-->
+                    </a>
+                </div>
+            </section>            
+
+        </header>
+
+
+        <!-- All content specific to this particular page are inside this main tag -->
+        <main>
+            <!-- Top most title and text paragraph description -->            
+            <h1>Interior design ideas</h1>
+            <p class="interior-design-text">To start a interior design project, sometimes, all it needs is
+                a good idea. Below are some amazing looking interior design
+                photoes to stimulate your creative bone. Choose a colour you like and see what ideas pop up!
+                We even have things for the fans of the wooden work.
+            </p>
+
+            <!-- The rest of the content is divided into two sections: -->
+            <!-- 1."Sphere buttons and color texts" section and 2. Images section -->
+
+            <section class= "color-buttons">
+                <!-- All content here is clickable and activates the javacript function -->
+
+                <!-- this one is default and for all colors -->
+                <div class=color-grid>
+                    <h1  onclick="checkColor('a')">All</h1>
+                    <span class="allsphere" onclick="checkColor('a')"></span>
+                </div>
+                <div class=color-grid>                    
+                    <h1  onclick="checkColor('r')">Red</h1>
+                    <!-- the span has no content, just css that make it a colorful sphere -->
+                    <span class="redsphere"  onclick="checkColor('r')"></span>
+                </div>
+                <div class=color-grid>
+                    <h1  onclick="checkColor('b')">Blue</h1>
+                    <span class="bluesphere" onclick="checkColor('b')"></span>
+                </div>
+                <div class=color-grid>
+                    <h1  onclick="checkColor('g')">Green</h1>
+                    <span class="greensphere" onclick="checkColor('g')"></span>
+                </div>
+                <div class=color-grid>
+                    <h1  onclick="checkColor('bei')">Beige</h1>
+                    <span class="beigesphere" onclick="checkColor('bei')"></span>
+                </div>
+                <div class=color-grid>
+                    <h1  onclick="checkColor('bnw')">B/W</h1>
+                    <span class="bwsphere" onclick="checkColor('bnw')"></span>
+                </div>
+                <div class=color-grid>
+                    <h1  onclick="checkColor('w')">Wooden</h1>
+                    <span class="wsphere" onclick="checkColor('w')"></span>
+                </div>
+            </section>
+            <!-- this created additional space -->
+            <span class= "redSphere"></span>
+
+            <!-- This are contains all the images used in this page. -->
+            <!-- The image are in a flexbox and change with screen-width -->
+            <section class="image-area">
+                <img alt="Interior design photo of a room with a red theme" class="red" class="colour" src="img/red1.jpg">
+                <img alt="Interior design photo of a room with a blue theme" class="blue" class="colour" src="img/blue1.jpg"> 
+                <img alt="Interior design photo of a room with a green theme" class="green" class="colour" src="img/green1.jpg">
+                <img alt="Interior design photo of a room with a beige theme" class="beige" class="colour" src="img/beige1.jpg">
+                <img alt="Interior design photo of a room with a black and white theme" class="blacknwhite" class="colour" src="img/bw1.jpg">
+                <img alt="Interior design photo of a room with a wooden theme" class="wooden" class="colour" src="img/wooden1.jpg">
+                <img alt="Interior design photo of a room with a red theme" class="red" class="colour" src="img/red2.jpg"> 
+                <img alt="Interior design photo of a room with a blue theme" class="blue" class="colour" src="img/blue2.jpg">
+                <img alt="Interior design photo of a room with a green theme" class="green" class="colour" src="img/green2.jpg">
+                <img alt="Interior design photo of a room with a beige theme" class="beige" class="colour" src="img/beige2.jpg">
+                <img alt="Interior design photo of a room with a black and white theme" class="blacknwhite" class="colour" src="img/bw2.jpg">
+                <img alt="Interior design photo of a room with a wooden theme" class="wooden" class="colour" src="img/wooden2.jpg">
+                <img alt="Interior design photo of a room with a red theme" class="red" class="colour" src="img/red3.jpg">
+                <img alt="Interior design photo of a room with a blue theme" alt="Interior design photo of a room with a blue theme"class="blue" class="colour" src="img/blue3.jpg">
+                <img alt="Interior design photo of a room with a green theme" class="green" class="colour" src="img/green3.jpg">
+                <img  alt="Interior design photo of a room with a beige theme"class="beige" class="colour" src="img/beige3.jpg">
+                <img alt="Interior design photo of a room with a black and white theme" class="blacknwhite" class="colour" src="img/bw3.jpg">
+                <img alt="Interior design photo of a room with a wooden theme" class="wooden" class="colour" src="img/wooden3.jpg">
+            </section>
+
+        </main>
+        <!-- onclick="alert('you choose red')" -->
+
+
+        <!--This is the last section of the body-->
+        <!--this changes based on screen size.-->
+        <!--when viewed on the same sized screen, it remains consistent in all the 5 pages-->
+        <footer>
+            <section class="footer">
+                <section class="footer1">
+                    <p1>&copy; All rights reserved.<br/>Architecture
+                     Now 2007-2021. <br/> ISSN:1234-1234 <br/>&copy;All images
+                     are not the property of this website author.
+                    </p1>
+
+                    <!--social media icons-->
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+
+                    <!--Links to other 3 pages-->
+                    <!-- this particular span will be displayed only in the tablet size range screens -->
+                    <span class="for-blank-space"></span> 
+                    <a href="merchandise.html"><p2 >Buy-here</p2></a>                    
+                    <a href="opinion.html"><p2>Articles</p2></a>                    
+                    <a href="signup.html"><p2>Sign-up </p2></a>
+
+                </section> 
+
+            </section>
+            
+        </footer>
+        <script src="script/script2_advancedjs_color_selection.js"></script><!--links to the color-sorting js script-->
+        <script src="script/script3_hamburger_menu.js"></script> <!--For the hamburger menu to work in smaller screens-->
+
+    </body>
+    
+</html>
