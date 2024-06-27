@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../../Desktop/StarExplorer"
+		},
+		{
+			"path": "../../../Desktop/ballon_first_solar2dGame"
+		},
+		{
+			"path": "../Lions-and-Lambs"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "anugya2.github.io"
+	}
+}

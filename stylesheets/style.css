@@ -12,7 +12,7 @@ colortheme-used{
 }
 
 
-
+/* Body is the outermost layer the complete white layer  with the central content area*/
 body{
   color: #575655;/* font color */
   /* background-color: rgb(236, 187, 154); */
@@ -28,6 +28,24 @@ body{
   background-size: cover;
 
 }
+
+body.body_projects{
+  color: #575655;/* font color */
+  /* background-color: rgb(236, 187, 154); */
+  display: grid;
+  grid-template-columns: 1fr 250px 750px 1fr;
+  /* grid-template-columns: 1fr 375px 1125px 1fr; */
+  padding: 0;
+  margin: 0;
+  grid-template-rows: repeat(95, 100px);
+  background-image: url(/img/DJI_0048.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+
 
 body.body_presentation{
   color: #575655;/* font color */
@@ -109,6 +127,8 @@ central{
   background-color: #f6f1ef;
   
 }
+
+/* Area under the header */
 /* Change this for different lengths in different pages*/
 central_presentations{
   grid-column-start: 2;
@@ -116,6 +136,16 @@ central_presentations{
   grid-row-start: 3;
   grid-row-end: span 28;
   background-color: #f6f1ef;  
+}
+
+central_projects{
+  grid-column-start: 2;
+  grid-column-end: span 2;
+  grid-row-start: 3;
+  grid-row-end: 16;
+  background-color: #f6f1ef;
+  /* background-color: #c24919; */
+  
 }
 
 /* add 3 to footer from central  */
@@ -234,15 +264,18 @@ photoArea{
   justify-content: flex-start;  
   align-content: flex-start;  
 }
-projectArea{
+
+/* Change length of beige area here from span */
+projectCardArea{
   /* background-color: rgba(202, 202, 202, 0.746); */
   /* background-color: rgba(202, 202, 202, 0.746); */
   background-color: #f6f1ef;
+  /* background-color: red; */
   padding: 15px;
   grid-column-start: 2;
   grid-column-end: span 2;
-  grid-row-start: 9;
-  grid-row-end: span 86;
+  grid-row-start: 4;
+  grid-row-end: span 70;
   display: flex;
   flex-direction: column;
   border-top: #838383ae;
@@ -252,6 +285,36 @@ projectArea{
 
   /* padding-right: 20px; */
 }
+
+projectCard{
+  /* background-color: rgba(230, 178, 178, 0.737); */
+  padding: 30px;
+  border-bottom: #575655;
+  border-bottom-style: solid;
+  border-bottom-width: 1px; 
+  padding-bottom: 70px;
+
+}
+/* descrPhoto grid */
+.descrPhoto{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 0;
+  margin: 0;
+}
+.descr{
+  display: flex;
+  flex-direction: column;
+}
+.photoVideo{
+  padding: 5px;
+  display: flex;
+
+}
+.project_photo{
+  padding-right: 40px;
+}
+
 ProjectRowContainer{
   display:flex;
   flex-direction: column;
