@@ -266,6 +266,7 @@ photoArea{
 }
 
 /* Change length of beige area here from span */
+/* Also change in footer span  add grid row staart and grid row end to footer end -1*/
 projectCardArea{
   /* background-color: rgba(202, 202, 202, 0.746); */
   /* background-color: rgba(202, 202, 202, 0.746); */
@@ -275,7 +276,7 @@ projectCardArea{
   grid-column-start: 2;
   grid-column-end: span 2;
   grid-row-start: 4;
-  grid-row-end: span 70;
+  grid-row-end: span 58;
   display: flex;
   flex-direction: column;
   border-top: #838383ae;
@@ -554,7 +555,7 @@ footer{
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: span 1;
-  grid-row-end: 95;
+  grid-row-end: 63;
   background-color: #f2ebe8;   
   border-style: solid;
   border-color:#ddd8d5;
